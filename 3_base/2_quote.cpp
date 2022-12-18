@@ -86,11 +86,12 @@ void fun3() {
     const int &d = 20;
 
     cout << c << endl;
+    cout << d << endl;
 }
 
 
 int main() {
-    fun3();
+    fun1();
     return 0;
 }
 

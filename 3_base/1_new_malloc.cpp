@@ -36,6 +36,7 @@ int main() {
 
     //int *q1 = new int[20];
     int *q1 = new int[20]();//会全部初始化为0
+    cout << *(q1 + 1) << endl;
     delete[] q1;
 
     ///new 有多少种

@@ -17,8 +17,8 @@ int fun1() {
     ///const_cast只用于去掉常量属性的地方
     int *p2 = const_cast<int *>(&a);
     *p1 = 20;
-    *p2 = 12;
     cout << "*p1:" << *p1 << endl;
+    *p2 = 12;
     cout << "*p2:" << *p2 << endl;
     return 0;
 }
@@ -30,7 +30,7 @@ int fun2() {
     char b = static_cast<int>(a);
 
     int *p = nullptr;
-    //double *d = static_cast<double *>(p);
+//    double *d = static_cast<double *>(p);
     cout << "b:" << b << endl;
 
 }
@@ -39,6 +39,7 @@ int fun3() {
     int *p = new int(2);
     ///类似与C风格的强制类型转换
     auto *p2 = reinterpret_cast<double *>(p);
+    cout << "p2:" << *p2 << endl;
 }
 
 class Base {
@@ -72,9 +73,14 @@ void showFunc(Base *p) {
     }
 }
 
-int main() {
+int fun4() {
     Derive1 d1;
     Derive2 d2;
     showFunc(&d1);
     showFunc(&d2);
+}
+
+int main(){
+    fun4();
+    return 0;
 }

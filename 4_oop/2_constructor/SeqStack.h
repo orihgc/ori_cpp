@@ -32,9 +32,9 @@ public:
     bool full();
 
 private:
-    int *_pStack{};///动态开辟数组，存储顺序栈的元素
-    int _top{};///指向栈顶元素的位置
-    int _size{};///数组扩容的总大小
+    int *_pStack;///动态开辟数组，存储顺序栈的元素
+    int _top;///指向栈顶元素的位置
+    int _size;///数组扩容的总大小
 
     void resize();
 };

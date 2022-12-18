@@ -35,7 +35,7 @@ public:
         cout << _year << "年" << _month << "月" << _day << "日" << endl;
     }
 
-    void show()const{
+    void show() const {
         cout << _year << "年" << _month << "月" << _day << "日" << endl;
     }
 

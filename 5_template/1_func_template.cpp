@@ -58,7 +58,7 @@ bool compare(const char *a, const char *b) {
 /**
  * 在函数调用点，编译器用用户指定的类型，从原模板实例化一份函数代码出来
  * */
-int main() {
+int fun1() {
     ///函数调用点
     compare<int>(1, 2);
     compare<double>(2.0, 1.0);
@@ -98,5 +98,10 @@ int fun2() {
     for (const auto &item: arr) {
         cout << item << endl;
     }
+    return 0;
+}
+
+int main(){
+    fun2();
     return 0;
 }

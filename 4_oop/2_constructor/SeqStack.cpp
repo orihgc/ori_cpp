@@ -30,7 +30,7 @@ SeqStack::SeqStack(const SeqStack &src) {
     _pStack = new int[src._size];
     ///为啥不用memcpy?
     ///数组里是整型是没有问题的，数组内的数据不占用外部资源，则可以使用memcpy，否则只能用for循环
-    for (int i = 0; i < src._top; ++i) {
+    for (int i = 0; i <= src._top; ++i) {
         _pStack[i] = src._pStack[i];
     }
     _top = src._top;
@@ -46,7 +46,7 @@ void SeqStack::operator=(const SeqStack &src) {
     delete[]_pStack;
 
     _pStack = new int[src._size];
-    for (int i = 0; i < src._top; ++i) {
+    for (int i = 0; i <= src._top; ++i) {
         _pStack[i] = src._pStack[i];
     }
     _top = src._top;

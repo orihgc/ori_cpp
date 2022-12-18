@@ -22,11 +22,15 @@ public:
         free(ptr);
     }
 
+    virtual ~A(){
+        cout << "~A()" << endl;
+    }
+
 private:
     int ma;
 };
 
-class B : virtual public A {
+class B : public A {
 public:
     void func() {
         cout << "cal B::func" << endl;
@@ -36,6 +40,11 @@ public:
         void *p = malloc(size);
         cout << "operator new p:" << p << endl;
         return p;
+    }
+
+    ~B(){
+        cout << "~B()" << endl;
+
     }
 
 private:
