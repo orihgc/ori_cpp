@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(ori_cpp)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(4_oop/2_constructor)
 
@@ -48,3 +48,10 @@ add_executable(8_diamond_extend 7_extend/8_diamond_extend.cpp)
 add_executable(9_virtual_destruct 7_extend/9_virtual_destruct.cpp)
 #类型转换
 add_executable(10_type_conversion 7_extend/10_type_conversion.cpp)
+
+add_executable(11_1_type 11_new_features/1_availability.cpp)
+add_executable(11_3_init_list 11_new_features/2_runtime.cpp)
+add_executable(11_3_right_reference 11_new_features/3_right_reference.cpp)
+add_executable(11_4_container 11_new_features/4_container.cpp)
+add_executable(11_5_smart_ptr 11_new_features/5_smart_ptr.cpp)
+add_executable(11_2_exception 11_new_features/6_exception.cpp)
