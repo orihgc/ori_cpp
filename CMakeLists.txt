@@ -49,9 +49,26 @@ add_executable(9_virtual_destruct 7_extend/9_virtual_destruct.cpp)
 #类型转换
 add_executable(10_type_conversion 7_extend/10_type_conversion.cpp)
 
+add_executable(8_1_vector 8_STL/1_vector.cpp)
+add_executable(8_2_deque_list 8_STL/2_deque_list.cpp)
+add_executable(8_3_adapter 8_STL/3_adapter.cpp)
+add_executable(8_4_unordered_container 8_STL/4_unordered_container.cpp)
+add_executable(8_5_ordered_container 8_STL/5_ordered_container.cpp)
+
+add_executable(9_1_thread 9_thread/1_thread.cpp)
+add_executable(9_2_thread_gc 9_thread/2_thread_gc.cpp)
+add_executable(9_3_this_thread 9_thread/3_this_thread.cpp)
+add_executable(9_4_call_once 9_thread/4_call_once.cpp)
+add_executable(9_5_native_handle 9_thread/5_native_handle.cpp)
+add_executable(9_6_lock 9_thread/6_lock.cpp)
+
 add_executable(11_1_type 11_new_features/1_availability.cpp)
 add_executable(11_3_init_list 11_new_features/2_runtime.cpp)
 add_executable(11_3_right_reference 11_new_features/3_right_reference.cpp)
 add_executable(11_4_container 11_new_features/4_container.cpp)
 add_executable(11_5_smart_ptr 11_new_features/5_smart_ptr.cpp)
 add_executable(11_2_exception 11_new_features/6_exception.cpp)
+
+add_executable(12_1_rall 12_geeks/1_rall.cpp)
+add_executable(12_2_smart_ptr 12_geeks/2_smart_ptr.cpp)
+add_executable(12_3_right_value 12_geeks/3_right_value.cpp)

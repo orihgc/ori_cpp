@@ -64,11 +64,17 @@ private:
     int mb;
 };
 
+void fun(Base* base){
+
+}
+
 int main() {
-    Base *pDerive = new Derive(10);
+    string  s{"aabcd"};
+    auto m=s.rfind("ab");
+            if(m==string::npos){
 
-    delete pDerive;
-
+            }
+    cout<<(m==string::npos);
 
     return 0;
 }
