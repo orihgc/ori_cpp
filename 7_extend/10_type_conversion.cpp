@@ -81,6 +81,5 @@ int fun4() {
 }
 
 int main(){
-    fun4();
     return 0;
 }

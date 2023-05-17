@@ -35,20 +35,7 @@ ostream &operator<<(ostream &out, const Student &stu) {
 }
 
 int main() {
-    set<int> set1;
-    for (int i = 0; i < 20; ++i) {
-        set1.insert(::rand() % 20);
-    }
 
-    for (int v: set1) {
-        cout << v << " ";
-    }
-
-    cout << endl;
-
-    set<Student> set2;
-    set2.insert(Student(1000, "李广"));
-    set2.insert(Student(1020, "张雯"));
 
     return 0;
 }
