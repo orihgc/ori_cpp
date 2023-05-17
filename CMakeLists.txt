@@ -3,8 +3,6 @@ project(ori_cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(4_oop/2_constructor)
-include_directories(9_thread)
 add_executable(main main.cpp)
 
 add_executable(3_1_new_malloc 3_base/1_new_malloc.cpp)
@@ -64,6 +62,7 @@ add_executable(9_4_call_once 9_thread/4_call_once.cpp)
 add_executable(9_5_native_handle 9_thread/5_native_handle.cpp)
 add_executable(9_6_lock 9_thread/6_lock.cpp)
 add_executable(9_7_condition_variable 9_thread/7_condition_variable.cpp)
+add_executable(9_8_atomic 9_thread/8_atomic.cpp)
 
 add_executable(11_1_type 11_new_features/1_availability.cpp)
 add_executable(11_3_init_list 11_new_features/2_runtime.cpp)
